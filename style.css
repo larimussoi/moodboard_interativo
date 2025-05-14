@@ -1,0 +1,140 @@
+:root {
+  --bg-light: #F2F7F9;
+  --text-light: #333;
+  --bg-dark: #121212;
+  --text-dark: #D3DDEA;
+
+  --primary: #87dce4;
+  --accent: #43a6c2;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+    padding: 1rem;
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#toggle-theme {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+p {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-emojis {
+   display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.emoji {
+  padding: 0.6rem 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--accent);
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 100%; 
+}
+
+@media (max-width: 500px) {
+  .emoji {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.emoji:hover {
+  transform: scale(1.02);
+}
+
+.moodboard {
+  border: 2px dashed #D3DDEA;
+  padding: 1rem;
+  border-radius: 16px;
+  display: grid;
+  gap: 1rem;
+}
+
+.imagem {
+  aspect-ratio: 16/9;
+  width: 100%;
+  max-height: 400px;
+  background-color: #D3DDEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.imagem img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.frase {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.paleta-cores {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.cor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #D3DDEA;
+  background-size: 300% 300%;
+  background-position: 0% 50%;
+  animation: girarDegrade 6s ease infinite;
+}
+
+@keyframes girarDegrade {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodBoard Interativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="light">
+  <header>
+    <h1>Como você se sente hoje?</h1>
+    <button id="toggle-theme">🌙</button>
+    <p>Escolha o ícone que mais combina com o seu humor.</p><br><br>
+  </header>
+    
+    <section class="container-emojis">
+
+        <button class="emoji" data-emocao="feliz">😊 Feliz</button>
+        <button class="emoji" data-emocao="triste">😢 Triste</button>
+        <button class="emoji" data-emocao="irritado">😡 Irritado</button>
+        <button class="emoji" data-emocao="surpreso">😲 Surpreso</button>
+        <button class="emoji" data-emocao="neutro" >😐 Neutro</button>
+        <button class="emoji" data-emocao="ansioso">😰 Ansioso</button>
+        <button class="emoji" data-emocao="apaixonado">😍 Apaixonado</button>
+        <button class="emoji" data-emocao="confuso">😕 Confuso</button>
+        <button class="emoji" data-emocao="pensativo">🤔 Pensativo</button>
+        <button class="emoji" data-emocao="desapontado">😞 Desapontado</button>
+        <button class="emoji" data-emocao="entediado">😒 Entediado</button>
+        <button class="emoji" data-emocao="animado">😄 Animado</button>
+
+    </section>
+
+    <section class="moodboard">
+        <div class="imagem"><p>Imagem aparecerá aqui</p></div>
+        <div class="frase">Frase aparecerá aqui</div>
+        <div class="paleta-cores">
+        <div class="cor"></div>
+        <div class="cor"></div>
+        <div class="cor"></div>
+        </div>
+   </section>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
